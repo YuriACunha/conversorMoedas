@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalhoPagina">
+            <h1>Conversor de moedas</h1>
+        </div>
+        <div class="caixaBotaoMenuMoedas">
+            <div class="custom-select" id="select-moeda-origem">
+                <div class="selected-option" data-value="BRL">
+                    <img src="./assets/brasil.png" alt="BRL"> BRL
+                </div>
+                <div class="options">
+                    <div class="option" data-value="BRL">
+                        <img src="./assets/brasil.png" alt="BRL"> BRL
+                    </div>
+                    <div class="option" data-value="USD">
+                        <img src="./assets/usd.png" alt="USD"> USD
+                    </div>
+                    <div class="option" data-value="EUR">
+                        <img src="./assets/euro.png" alt="EUR"> EUR
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="recebeValor1" placeholder="Insira um valor">
+        </div>
+        <div class="caixaBotaoConverter">
+            <button type="button" id="converter">Converter</button>
+        </div>
+        <div class="caixaBotaoMenuMoedasParaConverter">
+            <div class="custom-select" id="select-moeda-destino">
+                <div class="selected-option" data-value="USD">
+                    <img src="./assets/usd.png" alt="USD"> USD
+                </div>
+                <div class="options">
+                    <div class="option" data-value="USD">
+                        <img src="./assets/usd.png" alt="USD"> USD
+                    </div>
+                    <div class="option" data-value="BRL">
+                        <img src="./assets/brasil.png" alt="BRL"> BRL
+                    </div>
+                    <div class="option" data-value="EUR">
+                        <img src="./assets/euro.png" alt="EUR"> EUR
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="mostraConversao" placeholder="Resultado" readonly>
+        </div>
+    </div>
+</body>
+
+</html>
